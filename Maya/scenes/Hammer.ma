@@ -1,8 +1,14 @@
 //Maya ASCII 2017 scene
 //Name: Hammer.ma
+<<<<<<< HEAD
 //Last modified: Tue, Jan 16, 2018 06:33:27 PM
 //Codeset: UTF-8
 requires maya "2017";
+=======
+//Last modified: Tue, Jan 16, 2018 03:53:26 PM
+//Codeset: 1252
+requires maya "2017ff05";
+>>>>>>> master
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2017";
@@ -13,17 +19,30 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2B8A6BF3-4211-CA23-3AF5-DF8BF8517141";
 	setAttr ".v" no;
+<<<<<<< HEAD
 	setAttr ".t" -type "double3" -3.9687386535997291 6.1306284854532169 -48.047279920691338 ;
 	setAttr ".r" -type "double3" 719.66164726128568 3429.7999999995363 0 ;
+=======
+	setAttr ".t" -type "double3" -37.026873974359177 13.458925477371933 58.072448640118594 ;
+	setAttr ".r" -type "double3" -13.538352730165125 -390.20000000007684 4.6000338582652089e-016 ;
+>>>>>>> master
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D6BAFC36-44B6-3B33-3315-6AA224B86E9D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
+<<<<<<< HEAD
 	setAttr ".coi" 65.278285684342904;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
 	setAttr ".tp" -type "double3" -1.3573298454284668 7.5007369612781734 6.9913763403892517 ;
+=======
+	setAttr ".coi" 52.114484816962474;
+	setAttr ".imn" -type "string" "persp";
+	setAttr ".den" -type "string" "persp_depth";
+	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" -11.540662901123314 1.259122728088105 14.282753668050312 ;
+>>>>>>> master
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "CCBFD862-46C0-164D-10B7-02AD7D9C4AC5";
@@ -102,12 +121,17 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 1;
+<<<<<<< HEAD
+=======
+	setAttr ".ai_translator" -type "string" "polymesh";
+>>>>>>> master
 createNode transform -n "pCube3";
 	rename -uid "4BE6924C-4BB9-3E24-7A61-969D037D40A4";
 	setAttr ".t" -type "double3" 0 8.2315155255581978 -6.3066313646034979 ;
 	setAttr ".s" -type "double3" 24.226125830440434 1 1 ;
 createNode transform -n "polySurface1" -p "pCube3";
 	rename -uid "E4ED5191-4341-F52A-D7DA-E1B2D753C0B6";
+<<<<<<< HEAD
 createNode transform -n "transform2" -p "polySurface1";
 	rename -uid "5DC76FFA-4842-BFDE-6006-C39F7749152D";
 	setAttr ".v" no;
@@ -115,6 +139,11 @@ createNode mesh -n "polySurfaceShape1" -p "transform2";
 	rename -uid "33DCFAB9-443F-F9FE-875D-EAA2EBBB6E81";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
+=======
+createNode mesh -n "polySurfaceShape1" -p "polySurface1";
+	rename -uid "33DCFAB9-443F-F9FE-875D-EAA2EBBB6E81";
+	setAttr -k off ".v";
+>>>>>>> master
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -124,6 +153,7 @@ createNode mesh -n "polySurfaceShape1" -p "transform2";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+<<<<<<< HEAD
 	setAttr -s 170 ".pt";
 	setAttr ".pt[168]" -type "float3" 0 0 0.041425921 ;
 	setAttr ".pt[169]" -type "float3" 0 0 -0.04142591 ;
@@ -296,6 +326,12 @@ createNode mesh -n "polySurfaceShape1" -p "transform2";
 	setAttr ".pt[504]" -type "float3" 0 0 0.041425921 ;
 	setAttr ".pt[505]" -type "float3" 0 0 -0.04142591 ;
 	setAttr ".dr" 1;
+=======
+	setAttr -s 4 ".pt[102:105]" -type "float3"  -3.7252903e-009 0 0 -3.7252903e-009 
+		0 0 -3.7252903e-009 0 0 -3.7252903e-009 0 0;
+	setAttr ".dr" 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+>>>>>>> master
 createNode transform -n "transform1" -p "pCube3";
 	rename -uid "3F4979A1-4368-35AA-2295-FFB7FF184C5A";
 	setAttr ".v" no;
@@ -312,6 +348,7 @@ createNode mesh -n "pCubeShape3" -p "transform1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+<<<<<<< HEAD
 createNode transform -n "pCylinder1";
 	rename -uid "D3A5FA08-7540-907B-AD07-4AAD4B88C98A";
 	setAttr ".t" -type "double3" -11.558328896799273 1.2959140669523563 14.204316700669574 ;
@@ -356,6 +393,9 @@ createNode mesh -n "pCylinder2Shape" -p "pCylinder2";
 	setAttr ".pt[662]" -type "float3" -0.030358983 0.32743049 0 ;
 	setAttr ".pt[665]" -type "float3" -0.030358983 0.32743049 0 ;
 	setAttr ".dr" 1;
+=======
+	setAttr ".ai_translator" -type "string" "polymesh";
+>>>>>>> master
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "AE103C81-CA46-D991-1576-E88B222A9BE0";
 	setAttr -s 2 ".lnk";
@@ -648,7 +688,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace16";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -12.113063 8.2315159 -7.0065317 ;
 	setAttr ".rs" 58162;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -2.9098841437595572e-16 0 1.3104953145526856 ;
+=======
+	setAttr ".lt" -type "double3" -2.9098841437595572e-016 0 1.3104953145526856 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -12.113062915220217 7.7315155255581978 -7.5065315243387376 ;
 	setAttr ".cbx" -type "double3" -12.113062915220217 8.7315155255581978 -6.5065315243387376 ;
@@ -659,17 +703,33 @@ createNode polyExtrudeFace -n "polyExtrudeFace17";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -13.488303 7.795352 -7.0065317 ;
 	setAttr ".rs" 44527;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0 -2.7303062952639395e-16 1.3642468244929387 ;
+=======
+	setAttr ".lt" -type "double3" 0 -2.7303062952639395e-016 1.3642468244929387 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -13.770797659790803 7.3828037965085151 -7.5065315243387376 ;
 	setAttr ".cbx" -type "double3" -13.205807839448951 8.2079005825307014 -6.5065315243387376 ;
 createNode polyTweak -n "polyTweak3";
 	rename -uid "CBA65968-415B-F6F5-B1FD-E8911FC7B259";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 8 ".tk[24:31]" -type "float3"  0.0089882892 -0.3487117 0
 		 0.0089882892 -0.3487117 0 -0.014333277 -0.52361494 0 -0.014333277 -0.52361494 0 -4.6566129e-09
 		 1.4901161e-08 0 -4.6566129e-09 1.4901161e-08 0 4.6566129e-09 -1.4901161e-08 0 4.6566129e-09
 		 -1.4901161e-08 0;
+=======
+	setAttr -s 11 ".tk";
+	setAttr ".tk[24]" -type "float3" 0.0089882892 -0.3487117 0 ;
+	setAttr ".tk[25]" -type "float3" 0.0089882892 -0.3487117 0 ;
+	setAttr ".tk[26]" -type "float3" -0.014333277 -0.52361494 0 ;
+	setAttr ".tk[27]" -type "float3" -0.014333277 -0.52361494 0 ;
+	setAttr ".tk[28]" -type "float3" -4.6566129e-009 1.4901161e-008 0 ;
+	setAttr ".tk[29]" -type "float3" -4.6566129e-009 1.4901161e-008 0 ;
+	setAttr ".tk[30]" -type "float3" 4.6566129e-009 -1.4901161e-008 0 ;
+	setAttr ".tk[31]" -type "float3" 4.6566129e-009 -1.4901161e-008 0 ;
+>>>>>>> master
 createNode polyExtrudeFace -n "polyExtrudeFace18";
 	rename -uid "CDD4B2FE-4EE4-7CFA-216A-A586032D016A";
 	setAttr ".ics" -type "componentList" 1 "f[5]";
@@ -677,7 +737,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace18";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -14.61394 7.0245657 -7.0065317 ;
 	setAttr ".rs" 55595;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 3.5527136788005009e-15 -1.0867078487276788e-15 5.3905402106112952 ;
+=======
+	setAttr ".lt" -type "double3" 3.5527136788005009e-015 -1.0867078487276788e-015 5.3905402106112952 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -15.062372735352303 6.8034137475278023 -7.5065315243387376 ;
 	setAttr ".cbx" -type "double3" -14.16550789165367 7.2457178818966987 -6.5065315243387376 ;
@@ -689,6 +753,7 @@ createNode polyTweak -n "polyTweak4";
 createNode polyTweak -n "polyTweak5";
 	rename -uid "B3A73FD6-4157-7D10-6E6A-6CA6342E0258";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 12 ".tk";
 	setAttr ".tk[1]" -type "float3" -8.9406967e-08 0 0 ;
 	setAttr ".tk[3]" -type "float3" -8.9406967e-08 0 0 ;
@@ -702,6 +767,21 @@ createNode polyTweak -n "polyTweak5";
 	setAttr ".tk[33]" -type "float3" 0.031733815 -7.4505806e-09 0 ;
 	setAttr ".tk[34]" -type "float3" 0.031733815 7.4505806e-09 0 ;
 	setAttr ".tk[35]" -type "float3" 0.031733815 7.4505806e-09 0 ;
+=======
+	setAttr -s 17 ".tk";
+	setAttr ".tk[1]" -type "float3" -8.9406967e-008 0 0 ;
+	setAttr ".tk[3]" -type "float3" -8.9406967e-008 0 0 ;
+	setAttr ".tk[5]" -type "float3" -8.9406967e-008 0 0 ;
+	setAttr ".tk[7]" -type "float3" -8.9406967e-008 0 0 ;
+	setAttr ".tk[16]" -type "float3" -2.9802322e-008 0 0 ;
+	setAttr ".tk[17]" -type "float3" -2.9802322e-008 0 0 ;
+	setAttr ".tk[18]" -type "float3" -2.9802322e-008 0 0 ;
+	setAttr ".tk[19]" -type "float3" -2.9802322e-008 0 0 ;
+	setAttr ".tk[32]" -type "float3" 0.031733815 -7.4505806e-009 0 ;
+	setAttr ".tk[33]" -type "float3" 0.031733815 -7.4505806e-009 0 ;
+	setAttr ".tk[34]" -type "float3" 0.031733815 7.4505806e-009 0 ;
+	setAttr ".tk[35]" -type "float3" 0.031733815 7.4505806e-009 0 ;
+>>>>>>> master
 createNode polySplit -n "polySplit1";
 	rename -uid "A41AAF2E-4CD1-0D52-57F3-1DAD23B5074D";
 	setAttr -s 5 ".e[0:4]"  0.5 0.5 0.5 0.5 0.5;
@@ -737,6 +817,7 @@ createNode polyCloseBorder -n "polyCloseBorder1";
 createNode polyTweak -n "polyTweak6";
 	rename -uid "8C6E29D2-4AC0-DEEA-085C-D997E8C40EAD";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 36 ".tk";
 	setAttr ".tk[0]" -type "float3" 0.11147845 0 20.589384 ;
 	setAttr ".tk[1]" -type "float3" -1.7881393e-07 0 0 ;
@@ -750,6 +831,21 @@ createNode polyTweak -n "polyTweak6";
 	setAttr ".tk[9]" -type "float3" 2.9802322e-08 0 0 ;
 	setAttr ".tk[10]" -type "float3" 2.9802322e-08 0 0 ;
 	setAttr ".tk[11]" -type "float3" 2.9802322e-08 0 0 ;
+=======
+	setAttr -s 37 ".tk";
+	setAttr ".tk[0]" -type "float3" 0.11147845 0 20.589384 ;
+	setAttr ".tk[1]" -type "float3" -1.7881393e-007 0 0 ;
+	setAttr ".tk[2]" -type "float3" 0.11147845 0 20.589384 ;
+	setAttr ".tk[3]" -type "float3" -1.7881393e-007 0 0 ;
+	setAttr ".tk[4]" -type "float3" 0.11147845 0 20.589384 ;
+	setAttr ".tk[5]" -type "float3" -1.4901161e-007 0 0 ;
+	setAttr ".tk[6]" -type "float3" 0.11147845 0 20.589384 ;
+	setAttr ".tk[7]" -type "float3" -1.4901161e-007 0 0 ;
+	setAttr ".tk[8]" -type "float3" 2.9802322e-008 0 0 ;
+	setAttr ".tk[9]" -type "float3" 2.9802322e-008 0 0 ;
+	setAttr ".tk[10]" -type "float3" 2.9802322e-008 0 0 ;
+	setAttr ".tk[11]" -type "float3" 2.9802322e-008 0 0 ;
+>>>>>>> master
 	setAttr ".tk[12]" -type "float3" 0.11147845 0 20.589384 ;
 	setAttr ".tk[13]" -type "float3" 0.11147845 0 20.589384 ;
 	setAttr ".tk[14]" -type "float3" 0.11147845 0 20.589384 ;
@@ -793,7 +889,11 @@ createNode groupId -n "groupId3";
 createNode groupParts -n "groupParts2";
 	rename -uid "291F33D7-4B2B-4DA9-EF4A-5CB51A512D1B";
 	setAttr ".ihi" 0;
+<<<<<<< HEAD
 	setAttr ".ic" -type "componentList" 1 "f[0:25]";
+=======
+	setAttr ".ic" -type "componentList" 26 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]";
+>>>>>>> master
 createNode polyExtrudeFace -n "polyExtrudeFace19";
 	rename -uid "9E5233A7-401D-304A-77CA-1EAB579479EC";
 	setAttr ".ics" -type "componentList" 1 "f[25]";
@@ -801,7 +901,12 @@ createNode polyExtrudeFace -n "polyExtrudeFace19";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 2.7006855 8.2315159 14.282753 ;
 	setAttr ".rs" 52328;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -8.3909637049577958e-17 -4.6278840445178321e-17 -0.37789541014927286 ;
+=======
+	setAttr ".lt" -type "double3" -8.3909637049577958e-017 -4.6278840445178321e-017 
+		-0.37789541014927286 ;
+>>>>>>> master
 	setAttr ".off" -0.40000000596046448;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".tk" 0.60000008344650269;
@@ -814,7 +919,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace20";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 2.9227901 8.2315149 14.282753 ;
 	setAttr ".rs" 34141;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 4.5294020410413542e-15 5.3867477527164846e-16 4.3986133442450086 ;
+=======
+	setAttr ".lt" -type "double3" 4.5294020410413542e-015 5.3867477527164846e-016 4.3986133442450086 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 2.9227900481863309 6.9595831620480659 13.382753095845722 ;
 	setAttr ".cbx" -type "double3" 2.9227900481863309 9.5034474122311714 15.182752332906269 ;
@@ -842,7 +951,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace22";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 8.6714039 6.8808613 14.282753 ;
 	setAttr ".rs" 64546;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0.32177283563189635 -2.7810438289119171e-16 1.2475082211915478 ;
+=======
+	setAttr ".lt" -type "double3" 0.32177283563189635 -2.7810438289119171e-016 1.2475082211915478 ;
+>>>>>>> master
 	setAttr ".off" 0.10000000149011612;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 7.3214042770370691 6.8021396386410835 13.382753095845722 ;
@@ -850,8 +963,16 @@ createNode polyExtrudeFace -n "polyExtrudeFace22";
 createNode polyTweak -n "polyTweak8";
 	rename -uid "74A98508-47E0-AE5B-4C15-40B941848CF7";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 4 ".tk[36:39]" -type "float3"  0 -0.25744319 0 0 -0.25744319
 		 0 0 -0.25744319 0 0 -0.25744319 0;
+=======
+	setAttr -s 5 ".tk";
+	setAttr ".tk[36]" -type "float3" 0 -0.25744319 0 ;
+	setAttr ".tk[37]" -type "float3" 0 -0.25744319 0 ;
+	setAttr ".tk[38]" -type "float3" 0 -0.25744319 0 ;
+	setAttr ".tk[39]" -type "float3" 0 -0.25744319 0 ;
+>>>>>>> master
 createNode polyExtrudeFace -n "polyExtrudeFace23";
 	rename -uid "EADEEF49-470F-B92B-42C0-4FB066BD7EF6";
 	setAttr ".ics" -type "componentList" 1 "f[37]";
@@ -859,7 +980,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace23";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 8.9181986 5.6168432 14.282753 ;
 	setAttr ".rs" 44315;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0.065026973692845408 -2.379503952913112e-15 1.318765772437158 ;
+=======
+	setAttr ".lt" -type "double3" 0.065026973692845408 -2.379503952913112e-015 1.318765772437158 ;
+>>>>>>> master
 	setAttr ".off" -0.30000001192092896;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 7.6662174474285409 5.5438371884610298 13.482753477315448 ;
@@ -871,7 +996,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace24";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 8.9119892 4.2961998 14.282754 ;
 	setAttr ".rs" 33229;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0.58186019037391268 -5.9558254681661741e-15 1.2863642703278113 ;
+=======
+	setAttr ".lt" -type "double3" 0.58186019037391268 -5.9558254681661741e-015 1.2863642703278113 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 7.3661592914559497 4.2060586201932075 13.182754240254901 ;
 	setAttr ".cbx" -type "double3" 10.457818330756922 4.3863407361294868 15.382753095845722 ;
@@ -882,7 +1011,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace25";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 9.4179783 2.9781444 14.282754 ;
 	setAttr ".rs" 64346;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0.1324787573588467 -1.3506010098389108e-15 0.95621656134233768 ;
+=======
+	setAttr ".lt" -type "double3" 0.1324787573588467 -1.3506010098389108e-015 0.95621656134233768 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 7.8721491397341419 2.8880034673001411 13.182754240254901 ;
 	setAttr ".cbx" -type "double3" 10.963806735045489 3.0682855832364204 15.382753095845722 ;
@@ -893,7 +1026,12 @@ createNode polyExtrudeFace -n "polyExtrudeFace26";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 9.636137 1.7110513 14.282754 ;
 	setAttr ".rs" 55368;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -3.0531133177191805e-15 -3.8075058138749765e-15 0.75515435734132397 ;
+=======
+	setAttr ".lt" -type "double3" -3.0531133177191805e-015 -3.8075058138749765e-015 
+		0.75515435734132397 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 8.0999811006783169 1.5162740933682564 13.556779585103534 ;
 	setAttr ".cbx" -type "double3" 11.172292844996667 1.9058285939480903 15.008727750997089 ;
@@ -912,7 +1050,12 @@ createNode polyExtrudeFace -n "polyExtrudeFace27";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 8.1474762 1.3614212 14.282754 ;
 	setAttr ".rs" 61532;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -5.5511151231257827e-17 -2.1501279800506845e-16 3.8856755217674559 ;
+=======
+	setAttr ".lt" -type "double3" -5.5511151231257827e-017 -2.1501279800506845e-016 
+		3.8856755217674559 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 8.0999811006783169 0.76711809513827589 13.556779585103534 ;
 	setAttr ".cbx" -type "double3" 8.1949710701407028 1.9557243573453071 15.008727750997089 ;
@@ -928,7 +1071,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace28";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 4.5618153 1.0518764 14.282754 ;
 	setAttr ".rs" 36817;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -0.097921131276183238 -1.1226196876048358e-16 0.69742651910009656 ;
+=======
+	setAttr ".lt" -type "double3" -0.097921131276183238 -1.1226196876048358e-016 0.69742651910009656 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 4.5143205759583873 0.61279308674594191 13.692931852559589 ;
 	setAttr ".cbx" -type "double3" 4.6093101844233679 1.4909597623135689 14.872575483541034 ;
@@ -945,7 +1092,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace29";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 4.162364 1.5021354 14.282754 ;
 	setAttr ".rs" 46568;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -0.97358364398775477 2.1414833742432225e-16 5.0046810973469036 ;
+=======
+	setAttr ".lt" -type "double3" -0.97358364398775477 2.1414833742432225e-016 5.0046810973469036 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 3.8104077628289632 1.4909597623135689 13.692931852559589 ;
 	setAttr ".cbx" -type "double3" 4.5143202149609811 1.5133110272671821 14.872575483541034 ;
@@ -1037,7 +1188,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace32";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 3.755234 4.0186644 14.282754 ;
 	setAttr ".rs" 36049;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -2.6645352591003757e-15 3.5114730475191347e-15 0.3367553102664349 ;
+=======
+	setAttr ".lt" -type "double3" -2.6645352591003757e-015 3.5114730475191347e-015 0.3367553102664349 ;
+>>>>>>> master
 	setAttr ".off" 0.10000000149011612;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".tk" -0.40000000596046448;
@@ -1060,7 +1215,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace34";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" 3.8579028 1.0742277 14.282754 ;
 	setAttr ".rs" 42165;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -2.3454594553103374 -8.056487548741982e-15 16.442529569375807 ;
+=======
+	setAttr ".lt" -type "double3" -2.3454594553103374 -8.056487548741982e-015 16.442529569375807 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" 3.8104077628289632 0.68398296711703566 14.22896357558205 ;
 	setAttr ".cbx" -type "double3" 3.9053977322913496 1.4644724118497017 14.336543760518573 ;
@@ -1092,8 +1251,14 @@ createNode polyCut -n "polyCut2";
 createNode polyTweak -n "polyTweak14";
 	rename -uid "A53A4793-476C-5AAA-A4B6-FA93A4D5E9AE";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 2 ".tk[112:113]" -type "float3"  0 0.025334917 0 0 0.025334917
 		 0;
+=======
+	setAttr -s 3 ".tk";
+	setAttr ".tk[112]" -type "float3" 0 0.025334917 0 ;
+	setAttr ".tk[113]" -type "float3" 0 0.025334917 0 ;
+>>>>>>> master
 createNode polyExtrudeFace -n "polyExtrudeFace35";
 	rename -uid "EDA91DCC-4EE6-AEDF-1824-66B94598CEA1";
 	setAttr ".ics" -type "componentList" 1 "f[21]";
@@ -1107,8 +1272,16 @@ createNode polyExtrudeFace -n "polyExtrudeFace35";
 createNode polyTweak -n "polyTweak15";
 	rename -uid "EF70DD53-44FE-6B5F-CC4A-1E929ABC6BA6";
 	setAttr ".uopa" yes;
+<<<<<<< HEAD
 	setAttr -s 4 ".tk[102:105]" -type "float3"  0.049817678 -0.15687385 0
 		 0.049817678 -0.15687385 0 0.049817678 -0.15687385 0 0.049817678 -0.15687385 0;
+=======
+	setAttr -s 5 ".tk";
+	setAttr ".tk[102]" -type "float3" 0.049817678 -0.15687385 0 ;
+	setAttr ".tk[103]" -type "float3" 0.049817678 -0.15687385 0 ;
+	setAttr ".tk[104]" -type "float3" 0.049817678 -0.15687385 0 ;
+	setAttr ".tk[105]" -type "float3" 0.049817678 -0.15687385 0 ;
+>>>>>>> master
 createNode polyExtrudeFace -n "polyExtrudeFace36";
 	rename -uid "E7CCAE0B-435A-B30B-0F7E-EDAF71E2A295";
 	setAttr ".ics" -type "componentList" 1 "f[21]";
@@ -1116,7 +1289,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace36";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -12.954299 1.3329395 14.060744 ;
 	setAttr ".rs" 58879;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 0.38723202357675962 -4.114386308322511e-15 1.4467366477196526 ;
+=======
+	setAttr ".lt" -type "double3" 0.38723202357675962 -4.114386308322511e-015 1.4467366477196526 ;
+>>>>>>> master
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -13.080287597357721 0.91965162632724073 13.970000944356464 ;
 	setAttr ".cbx" -type "double3" -12.828309963909021 1.7462273824002388 14.151487074117206 ;
@@ -1149,7 +1326,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace38";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -11.357575 1.2780861 14.06076 ;
 	setAttr ".rs" 60652;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 3.3408754817458328e-16 2.8687879369683304e-15 0.074547378026011968 ;
+=======
+	setAttr ".lt" -type "double3" 3.3408754817458328e-016 2.8687879369683304e-015 0.074547378026011968 ;
+>>>>>>> master
 	setAttr ".ls" -type "double3" 0.68792460495354013 1 1 ;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -11.370672471566618 0.94534361241122511 13.970016203145526 ;
@@ -1166,7 +1347,12 @@ createNode polyExtrudeFace -n "polyExtrudeFace39";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -11.283093 1.2749821 14.060763 ;
 	setAttr ".rs" 44280;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -2.6632518495025109e-16 -2.5213714444213484e-16 0.03749599848638549 ;
+=======
+	setAttr ".lt" -type "double3" -2.6632518495025109e-016 -2.5213714444213484e-016 
+		0.03749599848638549 ;
+>>>>>>> master
 	setAttr ".ls" -type "double3" 0.35425453944050939 1 1 ;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -11.292102830118179 1.0460802304532173 13.96988268874123 ;
@@ -1178,7 +1364,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace40";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -11.540663 1.2591227 14.282754 ;
 	setAttr ".rs" 48908;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" -0.0031456322908743287 -1.4186941343708358e-14 0.14427174514573129 ;
+=======
+	setAttr ".lt" -type "double3" -0.0031456322908743287 -1.4186941343708358e-014 0.14427174514573129 ;
+>>>>>>> master
 	setAttr ".ls" -type "double3" 0.93621636960042454 1 1 ;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -11.588158246851913 0.86887800572177198 14.22896357558205 ;
@@ -1190,7 +1380,11 @@ createNode polyExtrudeFace -n "polyExtrudeFace41";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -11.684258 1.2448148 14.282754 ;
 	setAttr ".rs" 61030;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 1.6653345369377348e-16 -8.5240155582801682e-18 0.10222807222041154 ;
+=======
+	setAttr ".lt" -type "double3" 1.6653345369377348e-016 -8.5240155582801682e-018 0.10222807222041154 ;
+>>>>>>> master
 	setAttr ".ls" -type "double3" 0.81669400836197326 1 1 ;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -11.728724138834655 0.87946140644809034 14.22896357558205 ;
@@ -1202,11 +1396,16 @@ createNode polyExtrudeFace -n "polyExtrudeFace42";
 	setAttr ".ws" yes;
 	setAttr ".pvt" -type "float3" -11.785738 1.2324642 14.282754 ;
 	setAttr ".rs" 57605;
+<<<<<<< HEAD
 	setAttr ".lt" -type "double3" 4.8225312632155227e-16 -1.7913852607704597e-15 0.078215878588723489 ;
+=======
+	setAttr ".lt" -type "double3" 4.8225312632155227e-016 -1.7913852607704597e-015 0.078215878588723489 ;
+>>>>>>> master
 	setAttr ".ls" -type "double3" 0.46826137932210221 1 1 ;
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -11.822052798234163 0.93408214924594191 14.22896357558205 ;
 	setAttr ".cbx" -type "double3" -11.74942228611091 1.5308462369229439 14.336543760518573 ;
+<<<<<<< HEAD
 createNode polyTweak -n "polyTweak19";
 	rename -uid "A296D168-204C-86C0-70E4-40AE9959986D";
 	setAttr ".uopa" yes;
@@ -2541,6 +2740,8 @@ createNode polySplit -n "polySplit162";
 	setAttr -s 2 ".d[0:1]"  -2147482332 -2147482316;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+=======
+>>>>>>> master
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2559,9 +2760,15 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
+<<<<<<< HEAD
 	setAttr -s 9 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 5 ".gn";
+=======
+	setAttr -s 5 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 3 ".gn";
+>>>>>>> master
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultResolution;
@@ -2571,20 +2778,29 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 connectAttr "polyExtrudeFace5.out" "pCubeShape1.i";
 connectAttr "polyExtrudeFace13.out" "pCubeShape2.i";
+<<<<<<< HEAD
 connectAttr "polySplit118.out" "polySurfaceShape1.i";
 connectAttr "groupId3.id" "polySurfaceShape1.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "polySurfaceShape1.iog.og[0].gco";
 connectAttr "polyTweakUV1.uvtk[0]" "polySurfaceShape1.uvst[0].uvtw";
+=======
+connectAttr "polyExtrudeFace42.out" "polySurfaceShape1.i";
+connectAttr "groupId3.id" "polySurfaceShape1.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape1.iog.og[0].gco";
+>>>>>>> master
 connectAttr "groupId1.id" "pCubeShape3.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "pCubeShape3.iog.og[0].gco";
 connectAttr "groupParts1.og" "pCubeShape3.i";
 connectAttr "groupId2.id" "pCubeShape3.ciog.cog[0].cgid";
+<<<<<<< HEAD
 connectAttr "groupId4.id" "pCylinderShape1.iog.og[1].gid";
 connectAttr ":initialShadingGroup.mwc" "pCylinderShape1.iog.og[1].gco";
 connectAttr "groupParts3.og" "pCylinderShape1.i";
 connectAttr "groupId5.id" "pCylinderShape1.ciog.cog[1].cgid";
 connectAttr "polySplit162.out" "pCylinder2Shape.i";
 connectAttr "groupId6.id" "pCylinder2Shape.ciog.cog[0].cgid";
+=======
+>>>>>>> master
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -2724,6 +2940,7 @@ connectAttr "polyExtrudeFace40.out" "polyExtrudeFace41.ip";
 connectAttr "polySurfaceShape1.wm" "polyExtrudeFace41.mp";
 connectAttr "polyExtrudeFace41.out" "polyExtrudeFace42.ip";
 connectAttr "polySurfaceShape1.wm" "polyExtrudeFace42.mp";
+<<<<<<< HEAD
 connectAttr "polyExtrudeFace42.out" "polyTweak19.ip";
 connectAttr "polyTweak19.out" "polySplit5.ip";
 connectAttr "polySplit5.out" "polySplit6.ip";
@@ -2923,12 +3140,15 @@ connectAttr "polySplit159.out" "polyTweak28.ip";
 connectAttr "polyTweak28.out" "polySplit160.ip";
 connectAttr "polySplit160.out" "polySplit161.ip";
 connectAttr "polySplit161.out" "polySplit162.ip";
+=======
+>>>>>>> master
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape3.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape3.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "polySurfaceShape1.iog.og[0]" ":initialShadingGroup.dsm" -na;
+<<<<<<< HEAD
 connectAttr "pCylinderShape1.iog.og[1]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.ciog.cog[1]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinder2Shape.iog" ":initialShadingGroup.dsm" -na;
@@ -2938,4 +3158,9 @@ connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
+=======
+connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
+>>>>>>> master
 // End of Hammer.ma
